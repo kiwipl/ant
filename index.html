@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Strona o Antku</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Antek</h1>
+			<p>Kupuję graczom gry, aby ze mną grali</p>
+		</div>
+		<div class="games">
+			<div class="game">
+				<img src="mortals-and-monsters.jpg" alt="Mortals and Monsters">
+				<h2>Mortals and Monsters</h2>
+				<button onclick="showDescription(1)">Zobacz opis</button>
+				<p id="description-1" style="display: none;">Mortals and Monsters to gra przeglądarkowa, w której gracze wcielają się w postaci śmiertelników lub potworów i walczą ze sobą na różnych arenach. Gracze mogą wybierać spośród wielu różnych postaci, każda z unikalnymi umiejętnościami i atakami. Gra jest dynamiczna i pełna akcji, a także oferuje wiele różnych trybów rozgrywki, takich jak deathmatch, zabójstwa i kontrola strefy. </p>
+</div>
+<div class="game">
+<img src="plastic-warfare.jpg" alt="Plastic Warfare">
+<h2>Plastic Warfare</h2>
+<button onclick="showDescription(2)">Zobacz opis</button>
+<p id="description-2" style="display: none;">Plastic Warfare to gra sieciowa z gatunku FPS, w której gracze walczą ze sobą w różnych trybach rozgrywki, takich jak deathmatch, zabójstwa i tryb wyścigu. Gracze mają do dyspozycji szeroką gamę broni i gadżetów, a także możliwość personalizacji swoich postaci. Gra jest pełna akcji i nieprzewidywalnych zwrotów akcji, a także oferuje wiele różnych map i trybów gry. </p>
+</div>
+<div class="game">
+<img src="dark-deceptions.jpg" alt="Dark Deceptions">
+<h2>Dark Deceptions</h2>
+<button onclick="showDescription(3)">Zobacz opis</button>
+<p id="description-3" style="display: none;">Dark Deceptions to gra przygodowa z gatunku horror, w której gracze wcielają się w postać dziecka uwięzionego w labiryncie pełnym potworów i pułapek. Gracze muszą uważać na swoje otoczenie, unikać niebezpieczeństw i rozwiązywać zagadki, aby przejść przez każdy poziom i uwolnić się z labiryntu. Gra jest pełna niepokojących i przerażających momentów, a także oferuje wiele różnych opcji i poziomów trudności, dzięki czemu każdy gracz może dostosować grę do swoich potrzeb i preferencji. </p>
+</div>
+<div class="game">
+<img src="plants-vs-zombies-bfn.jpg" alt="Plants vs Zombies: Battle for Neighborville">
+<h2>Plants vs Zombies: Battle for Neighborville</h2>
+<button onclick="showDescription(4)">Zobacz opis</button>
+<p id="description-4" style="display: none;">Plants vs Zombies: Battle for Neighborville to gra akcji z gatunku tower defense, w której gracze wcielają się w rośliny lub zombie i walczą ze sobą na różnych polach bitew. Gracze mają do dyspozycji szeroką gamę roślin i zombie, a także możliwość personalizacji swoich postaci. Gra oferuje wiele różnych trybów rozgrywki, takich jak deathmatch, kooperacja i tryb wyzwań, a także dynamiczne i pełne akcji walki. </p>
+</div>
+<div class="about-me">
+			<h2>O mnie</h2>
+            <p>Nazywam się Antek i jestem wielkim miłośnikiem gier. Chętnie kupuję gry dla znajomych i zapraszam ich do wspólnej rozgrywki, nawet jeśli odmówią to im każe ze sobą grać. Moim ulubionym typem gry jest FPS, ale uwielbiam także gry z gatunku horror i tower defense. Poza graniem, jestem bardzo dobry generałem. </p>		</div>
+		<div class="skills">
+			<h2>Umiejętności</h2>
+			<ul>
+                <li>Granie w gry</li>
+                <li>Kupywanie innym gier</li>
+                <li>Myślenie</li>
+                <li>Komunikacja z innymi graczami</li>
+                <li>Sranie pod siebie</li>
+                <li>Dobry generał</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2020 Antek</p>
+		</div>
+	</div>
+</section>
+<script>
+function showDescription(id) {
+let description = document.getElementById("description-" + id);
+if (description.style.display === "none") {
+description.style.display = "block";
+} else {
+description.style.display = "none";
+}
+}
+</script>
+</body>
+
+</html>
